@@ -34,3 +34,6 @@ app.post('/upload', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
+app.get('/', (req, res) => {
+    res.send('Server is running! ESP32 can connect now.');
+});
